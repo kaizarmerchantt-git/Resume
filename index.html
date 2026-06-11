@@ -925,7 +925,7 @@ footer p{
       </h1>
       <p class="hero-title">
         <strong>M.Sc. Hybrid Electric Propulsion Technology</strong> at BTU Cottbus-Senftenberg.<br/>
-        Master's student focusing on aerospace propulsion, with hands-on experience in simulation, testing, and mechanical design.
+        Propulsion engineer with hands-on hardware experience, now building simulation and performance analysis depth through graduate study and self-directed projects.
       </p>
       <div class="hero-cta">
         <button onclick="openPortfolioModal()" class="btn-primary">Request Portfolio</button>
@@ -938,7 +938,7 @@ footer p{
           <span class="stat-label">Industry<br/>Years</span>
         </div>
         <div class="stat-item">
-          <span class="stat-num">03</span>
+          <span class="stat-num">04</span>
           <span class="stat-label">Core<br/>Projects</span>
         </div>
         <div class="stat-item">
@@ -973,12 +973,12 @@ footer p{
     <h2 class="section-title">Engineering Profile</h2>
     <div class="about-grid">
       <div class="fade-up">
-        <blockquote class="about-quote">"Committed to combining rigorous mechanical design with practical digital tools to support engineering teams."</blockquote>
+        <blockquote class="about-quote">"Committed to structured engineering: from hardware testing and composite fabrication to thermodynamic simulation and data-driven performance evaluation."</blockquote>
         <p class="about-body">
           Aeronautical engineer with close to two years of industry experience in <strong>UAV design, propulsion sizing, and product development</strong> at two Bangalore-based aerospace startups. Covered the full hardware lifecycle: from feasibility studies and propulsion sizing through composite fabrication, CNC machining, and flight validation.
         </p>
         <p class="about-body">
-          Currently pursuing an M.Sc. in <strong>Hybrid Electric Propulsion Technology</strong> at BTU Cottbus-Senftenberg, deepening focus on gas turbine thermodynamics, electrified propulsion architectures, and simulation-driven engineering. Actively building depth in 0D thermodynamic cycle analysis and digital engineering tools alongside formal graduate study.
+          Currently pursuing an M.Sc. in <strong>Hybrid Electric Propulsion Technology</strong> at BTU Cottbus-Senftenberg, with coursework in gas turbine thermodynamics, electrified propulsion architectures, and simulation-driven engineering. Alongside graduate study, developing a 0D thermodynamic cycle simulator (Python, FastAPI, Cantera) and contributing to a university research project on two-phase thermal management modeling in MATLAB/Simscape.
         </p>
         <p class="about-body">
           Internship exposure to gas turbine R&D at <strong>GTRE/DRDO</strong> (Bangalore) and commercial turbofan MRO at <strong>AIESL</strong> (GEnx-1B and GE90, Mumbai). Based in Cottbus, Germany. Open to working student roles and internships in propulsion engineering, mechanical design, or simulation.
@@ -1038,7 +1038,7 @@ footer p{
   <div class="section-inner">
     <p class="section-tag">// 02. projects</p>
     <h2 class="section-title">Core Projects</h2>
-    <p class="section-sub">Engineering projects spanning gas turbine simulation, machine learning for turbomachinery, and UAV hardware development.</p>
+    <p class="section-sub">Engineering projects spanning gas turbine simulation, thermal management modeling, and machine learning for turbomachinery.</p>
 
     <!-- Project 1 -->
     <div class="projects-grid">
@@ -1077,10 +1077,43 @@ footer p{
         </div>
       </div>
 
-      <!-- Project 2 -->
+      <!-- Project 2: Thermal Management Study Project -->
       <div class="project-card fade-up">
         <div>
-          <p class="project-num">Project 02 / B.E. Thesis</p>
+          <p class="project-num">Project 02 / Study Project</p>
+          <h3 class="project-title">Thermal Management Simulation</h3>
+          <p class="project-subtitle">Two-Phase Heat Exchanger Modeling in Simscape &nbsp;&middot;&nbsp; 2026</p>
+          <div class="project-tags">
+            <span class="project-tag">MATLAB</span>
+            <span class="project-tag">Simscape</span>
+            <span class="project-tag">DAE Solvers</span>
+            <span class="project-tag">Thermodynamic EoS</span>
+            <span class="project-tag">Automated Code Generation</span>
+          </div>
+          <div class="project-meta">
+            <div>
+              <p class="meta-item-label">Problem</p>
+              <p class="meta-item-text">Modeling two-phase heat exchangers for aerospace thermal management requires thermodynamic property data across subcooled, saturated, and superheated regimes. Standard single-phase Simscape libraries do not support this, and manually coding custom components from empirical correlations is error-prone at scale.</p>
+            </div>
+            <div>
+              <p class="meta-item-label">Approach</p>
+              <p class="meta-item-text">Built a <strong>custom multi-layer two-phase heat exchanger interface</strong> natively in Simscape. Processed complex equations of state to generate large-scale <strong>interpolation grids</strong> covering all fluid regimes. Developed MATLAB automation scripts that parse raw thermodynamic data and dynamically synthesize over <strong>1,300 lines of declarative Simscape component code</strong> (.ssc), eliminating manual transcription. Translated empirical correlations for flow boiling, pressure drops, and flow regime mapping into purely declarative constraint equations compatible with the DAE solver.</p>
+            </div>
+            <div>
+              <p class="meta-item-label">Result</p>
+              <p class="meta-item-text">Functional custom simulation components with validated thermodynamic properties (verified against theoretical limits: normal boiling points, critical points). Numerical stability achieved through algebraic loop management, piece-wise property normalization, and smoothed flow reversals, ensuring strict mass, energy, and momentum conservation.</p>
+            </div>
+          </div>
+        </div>
+        <div class="project-links">
+          <div class="status-badge status-active"><span class="status-dot"></span>In Progress</div>
+        </div>
+      </div>
+
+      <!-- Project 3: B.E. Thesis -->
+      <div class="project-card fade-up">
+        <div>
+          <p class="project-num">Project 03 / B.E. Thesis</p>
           <h3 class="project-title">ML in Compressor Blade Design</h3>
           <p class="project-subtitle">Axial Compressor Performance Prediction &nbsp;&middot;&nbsp; 2022&ndash;23</p>
           <div class="project-tags">
@@ -1148,6 +1181,7 @@ footer p{
           <div class="skill-item"><span class="skill-name">XFLR5</span><span class="skill-level level-pro">Professional</span></div>
           <div class="skill-item"><span class="skill-name">SimScale</span><span class="skill-level level-pro">Professional</span></div>
           <div class="skill-item"><span class="skill-name">Cantera (0D Cycle)</span><span class="skill-level level-adv">Project</span></div>
+          <div class="skill-item"><span class="skill-name">Simscape (Custom Components)</span><span class="skill-level level-adv">Project</span></div>
         </div>
       </div>
       <div class="skill-category">
@@ -1160,7 +1194,7 @@ footer p{
           <div class="skill-item"><span class="skill-name">FastAPI / REST APIs</span><span class="skill-level level-adv">Project</span></div>
           <div class="skill-item"><span class="skill-name">JavaScript / React</span><span class="skill-level level-fam">Familiar</span></div>
           <div class="skill-item"><span class="skill-name">Bash / Git</span><span class="skill-level level-adv">Working</span></div>
-          <div class="skill-item"><span class="skill-name">MATLAB</span><span class="skill-level level-fam">Certified</span></div>
+          <div class="skill-item"><span class="skill-name">MATLAB</span><span class="skill-level level-adv">Project</span></div>
         </div>
       </div>
       <div class="skill-category">
@@ -1317,8 +1351,7 @@ footer p{
       <p class="section-tag" style="text-align:center">// 06. contact</p>
       <h2 class="contact-big">Let&rsquo;s <span>Connect</span></h2>
       <p class="contact-sub">
-        Open to working student roles and internships in propulsion engineering, mechanical design, and simulation across Germany.<br/>
-        Student visa: 120 full working days per year. Immediate availability.
+        Open to working student roles and internships in propulsion engineering, mechanical design, and simulation across Germany. Immediate availability.
       </p>
       <a href="mailto:Kaizarmerchantt@gmail.com" class="contact-email">Kaizarmerchantt@gmail.com</a>
       <div class="social-links">
