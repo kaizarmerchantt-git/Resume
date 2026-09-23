@@ -1,4 +1,4 @@
-# OS generated files
+# Operating System Files
 .DS_Store
 .DS_Store?
 ._*
@@ -8,27 +8,65 @@ ehthumbs.db
 Thumbs.db
 desktop.ini
 
-# IDE and Editor folders
+# IDE & Editor Directories
 .vscode/
 .idea/
+*.sublime-project
+*.sublime-workspace
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
 
-# Python scripts used for temporary edits
+# Python Environment & Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+scratch_env/
+.venv/
+env/
+venv/
+ENV/
+
+# Python Build, Analysis & Test Scripts (Site is pure static HTML/CSS/JS)
+build_v2.py
+inspect_obj.py
+process_cad.py
+copy_videos.py
+check_glb.py
+capture_video_shots.py
+test_convert.py
+test_model_viewer.py
+verify_v2.py
+generate_linkedin_cv.py
 fix_site.py
 fix_form.py
-*.pyc
-__pycache__/
 
-# Node / NPM (just in case you add tools later)
-node_modules/
-npm-debug.log
-yarn-error.log
+# Unused 3D Renders, Videos & Heavy CAD Source Models (Client NDA Protected)
+site_assets/*.mp4
+site_assets/*.glb
+site_assets/*.obj
+site_assets/shot_*.png
+site_assets/*test*.png
+site_assets/*capture*.png
+site_assets/*wireframe*.png
 
-# Temporary / Scratch files
+# Temporary Scratch Files & Test Frames
+frame_*.jpg
+test_crop_*.png
+test_*.html
+temp_*.html
+video_frames/
+thesis_images/
+
+# Internal Context, Reference & Working Documents
+Master_Context.md
+CV - Formatting Ref.docx
+tab_image_test.docx
+tab_test.docx
+
+# Logs & Temporary Files
+*.log
 *.bak
 *.tmp
-*.log
